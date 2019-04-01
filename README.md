@@ -1,5 +1,5 @@
 # genetic-algorithm-optimization
- Genetic Algorithm (GA) is a common technique in Evolutionary Computation using to solve optimization problems. Last semester I created a GA to solve two dimension optimization problem f(x,y). The function is periodic, and the objective is to find a maximum of this function between [-1,2].
+ Genetic Algorithm (GA) is a common technique in Evolutionary Computation using to solve optimization problems. When a I was studying my master degree I did a GA to solve two dimension optimization problem for f(x,y). The function is periodic, and the objective is to find a maximum of this function between [-1,2].
 
 ```python
  f(x,y) = x*sin(4*pi*x) - y*sin(4*pi+pi) + 1
