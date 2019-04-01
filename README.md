@@ -6,7 +6,7 @@
  ```
 
  <p align="center">
- <img src="https://github.com/Alro10/genetic-algorithm-optimization/blob/master/fx.png" alt="alt text" width="80%" height="60%">
+ <img src="https://github.com/Alro10/genetic-algorithm-optimization/blob/master/fx.png" alt="alt text" width="80%" height="80%">
  </p>
 
  enjoy learning!
