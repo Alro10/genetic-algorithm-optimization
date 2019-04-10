@@ -3,7 +3,7 @@
 % minimizes the objective function designated in ff
 %
 % Before beginning, set all the parameters in parts I, II, and III
-%% I Setup the GA
+%% Setup the GA
 clear all; clc;
 ff='testfunction'; % objective function
 npar=2; % number of optimization variables
@@ -29,7 +29,7 @@ par=par(ind,:); % sort continuous
 minc(1)=max(cost); % minc contains max of
 meanc(1)=mean(cost); % meanc contains mean of population
 
-  
+
 %% Iterate through generations (Main Loop)
 while iga<maxit
 iga=iga+1; % increments generation counter
@@ -93,19 +93,19 @@ cost=feval(ff,par);
 par=par(ind,:);
 Coords{iga+1}=par;
 %_______________________________________________________
-% Plot function  26_11_16  
+% Plot function  26_11_16
 figure (2)
   [X,Y] = meshgrid(-1:.02:2, -1:.02:2);
         Z =sin(4*pi*X).*X-sin(4*pi*Y+pi).*Y+1;
         %hold on;
         % sin(4*pi*xx).*xx-sin(4*pi*yy+pi).*yy+1
-        
-        
+
+
         surf(X,Y,Z)
         xlabel('x')
         ylabel('y')
         zlabel('f(x,y)')
-      
+
        hold on;
   pcolor(X,Y,Z);              % is really a SURF with its view set to directly above
  shading interp
@@ -143,5 +143,5 @@ iters=0:length(minc)-1;
 
 plot(iters,minc,iters,meanc,'r');
 xlabel('generation');ylabel('fitness');
-title('Gráfico Fitness em função das gerações')
-legend('Melhor indivíduo','Médio','Location','east')
+title('Fitness function')
+legend('Best individual','Mean of population','Location','east')
